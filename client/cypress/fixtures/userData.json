@@ -13,5 +13,16 @@
     "userFail": {
         "email": "testfail@test.com",
         "password": "test123"
+    },
+    "newHero": {
+          "name": "Cinnamon",
+          "price": 100,
+          "fans": 1000,
+          "saves": 496
+    },
+    "newHeroFail":{
+          "price": 100,
+          "fans": 1000,
+          "saves": 496
     }
 }

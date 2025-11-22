@@ -1,4 +1,4 @@
-class HomePage{
+class LoginPage{
     selectorsList(){
         const selectors = {
             likeButtom: "[data-cy='like']",
@@ -36,4 +36,4 @@ class HomePage{
         cy.get(this.selectorsList().invalidAcess)
     }
 }
-export default HomePage
+export default LoginPage
