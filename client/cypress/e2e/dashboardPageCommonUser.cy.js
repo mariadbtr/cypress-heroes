@@ -5,7 +5,8 @@ import DashboardPage from '../pages/dashboardPageCommonUser'
 const loginPage = new LoginPage
 const dashboardPageCommonUser = new DashboardPage
 
- it('Login válido - Usuário comum', () => {
+describe('Dashboard Page - Common User', () => {
+ it('Realizar comandos com Acesso de usuário comum', () => {
     cy.visit('http://localhost:3000/heroes')
     loginPage.loginButtom()
     loginPage.loginWithAnyUser(userData.userSucess.email, userData.userSucess.password)
@@ -13,3 +14,4 @@ const dashboardPageCommonUser = new DashboardPage
     dashboardPageCommonUser.hireButtom()
     dashboardPageCommonUser.logoutButtom()    
  })
+})

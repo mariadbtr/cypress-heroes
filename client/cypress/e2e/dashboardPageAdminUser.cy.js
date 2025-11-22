@@ -5,7 +5,8 @@ import DashboardPage from '../pages/dashboardPageAdminUser'
 const loginPage = new LoginPage
 const dashboardPageAdminUser = new DashboardPage
 
- it('Login válido - Admin', () => {
+describe('Dashboard Page - Admin', () => {
+ it('Realizar comandos com Acesso Admin', () => {
     cy.visit('http://localhost:3000/heroes')
     loginPage.loginButtom()
     loginPage.loginWithAnyUser(userData.adminAcess.email, userData.adminAcess.password)
@@ -15,6 +16,6 @@ const dashboardPageAdminUser = new DashboardPage
     dashboardPageAdminUser.editDeleteHero()
     dashboardPageAdminUser.deleteHeroDashboard()
     dashboardPageAdminUser.logoutButtom()    
-  
-    })
+   })
+})
     

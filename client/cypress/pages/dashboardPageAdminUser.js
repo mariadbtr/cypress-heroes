@@ -65,4 +65,4 @@ class DashboardPage{
         cy.get(this.selectorsList().logoutButtom).eq(1).click()
     }
 }
-    export default DashboardPage
+export default DashboardPage
